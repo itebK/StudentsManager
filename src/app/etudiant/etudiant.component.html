@@ -1,0 +1,7 @@
+<li [ngClass]="{'list-group-item': true,
+                'list-group-item-success': statut=== 'accepté',
+                'list-group-item-danger': statut=== 'refusé'}">
+
+  <h4 [ngStyle]="{color: getColor()}">etudiant : {{ etudiantName }} -- Statut : {{ statut }}</h4>
+<input type="text" class="form-control" [(ngModel)]="etudiantName">
+</li>
